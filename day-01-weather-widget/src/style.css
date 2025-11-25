@@ -1,0 +1,127 @@
+/* src/style.css */
+
+/* Reset muy simple */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  line-height: 1.5;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #020617; /* slate-950 vibes */
+  color: #e5e7eb; /* slate-200 */
+}
+
+/* Layout principal */
+.layout-main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: 640px; /* ~max-w-xl */
+  padding: 2rem 1.5rem;
+}
+
+/* Header */
+.layout-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.layout-title {
+  font-size: 1.875rem; /* ~text-3xl */
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.layout-subtitle {
+  font-size: 0.9rem;
+  color: #cbd5f5; /* slate-300-ish */
+  margin-bottom: 0.25rem;
+}
+
+.layout-api {
+  font-size: 0.75rem;
+  color: #64748b; /* slate-500 */
+}
+
+/* Card central donde vive el proyecto del día */
+.layout-card {
+  background: rgba(15, 23, 42, 0.9); /* slate-900 */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(148, 163, 184, 0.4); /* slate-400 */
+}
+
+/* Footer */
+.layout-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6b7280; /* gray-500 */
+}
+
+/* Utilidades básicas que te pueden servir en los mini proyectos */
+.text-center {
+  text-align: center;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: #111827;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease,
+    box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  background: #020617;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Para el contenido de los proyectos (lo usaremos después) */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
